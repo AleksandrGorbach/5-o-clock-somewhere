@@ -76,9 +76,10 @@ A web based app that allows users to search for various mixed drinks and retriev
 MVP: 
 - Setup API with app to pull data
 - Allow user(s) to input a liqour and retrieve data showcasing different cocktails followed by the ingredients and image(s).  
-- Design the structure of the wireframe 
+- Style the page using flexbox
+- Add media query 
 
-MVP:
+PMVP:
 - Allow users to save their favorite cocktails.
 - Add additional options: 'dealers choice' which provides the user with a random cocktail.
 - Create a small mixer animation when fetching data.
@@ -91,12 +92,12 @@ MVP:
 |June 21| Prompt / Wireframes / Priority Matrix / Timeframes | Complete
 |June 22| Project Approval / Core Application Structure (HTML, CSS, etc.) | Incomplete
 |June 23| Pseudocode / actual code | Incomplete
-|June 24| Initial Clickable Model  | Incomplete
-|June 25| MVP | Incomplete
+|June 24| MVP  | Incomplete
+|June 25| PVMP & Additional Touchups | Incomplete
 |June 28| Presentations | Incomplete
 
 ## Priority Matrix
-[Priority Matrix](https://imgur.com/a/S0njQND)
+[Priority Matrix](https://i.imgur.com/Q6mfwFa.png)
 
 ## Timeframes
 
@@ -105,16 +106,18 @@ MVP:
 | HTML/CSS Skeleton | H | 2hrs | 3.5hrs | 3.5hrs |
 | Initial JS with API Skeleton | H | 1hrs |
 | Making sure it is viable on mobile devices | H | 3hrs |
+| Adding a media query | H | 3hrs |
 | Setting up search functionality for user | H | 2hrs |
-| Displaying the text and images from the API | 3hrs | 
-| Styling to replicate the wireframe | 3hrs |
+| Displaying the text and images from the API | H | 3hrs | 
+| Additional styling with flexbox | H | 3hrs |
+| Working on local storage for "favorites options" | M | 3hrs | 
 | Working with API | H | 3hrs | 2.5hrs | 2.5hrs |
 | Debugging & troubleshooting | H | 3hrs |
 | Getting user feedback | M | 2hrs |
 | Hosting the projet | M | 1hr | 
 | Testing functionality | H | 2hrs |
 | Mock Presentation(s) | M | 1hr |
-| Total | H | 26hrs| hrs | 5hrs |
+| Total | H | 32hrs| hrs | 5hrs |
 
 ## Code Snippet
 
