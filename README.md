@@ -110,6 +110,7 @@ PMVP:
 | Setting up search functionality for user | H | 2hrs |
 | Displaying the text and images from the API | H | 3hrs | 
 | Additional styling with flexbox | H | 3hrs |
+| Formatting results into gallery | H | 2hrs |
 | Working on local storage for "favorites options" | M | 3hrs | 
 | Working with API | H | 3hrs | 2.5hrs | 2.5hrs |
 | Debugging & troubleshooting | H | 3hrs |
@@ -117,7 +118,7 @@ PMVP:
 | Hosting the projet | M | 1hr | 
 | Testing functionality | H | 2hrs |
 | Mock Presentation(s) | M | 1hr |
-| Total | H | 32hrs| hrs | 5hrs |
+| Total | H | 34hrs| hrs | 5hrs |
 
 ## Code Snippet
 
