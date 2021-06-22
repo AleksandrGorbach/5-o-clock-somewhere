@@ -69,7 +69,7 @@ A web based app that allows users to search for various mixed drinks and retriev
 
 ## Wireframes
 
-![5 O'clock Somewhere Wireframe](https://imgur.com/a/kI3VBR2)
+![5 O'clock Somewhere Wireframe](https://i.imgur.com/RLYPeJi.png)
 
 ### MVP/PostMVP
 
