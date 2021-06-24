@@ -1,9 +1,13 @@
 const DOMAIN = 'https://www.thecocktaildb.com/api/json/v1/1/search.php';
 const API_KEY = '9973533';
+const RANDOM_COCKTAIL = 'https://www.thecocktaildb.com/api/json/v2/1/randomselection.php'
 const BASE_URL = `${DOMAIN}?apikey=${API_KEY}&`
+// const RANDOM_URL = `${RANDOM_COCKTAIL}?apikey=${API_KEY}`
+const RANDOM_URL = 'https://www.themealdb.com/api/json/v2/9973533/randomselection.php'
 
 const cocktailList = document.querySelector('.display')
 const mainSearch = document.querySelector('#search-drink')
+const randomSearch = document.querySelector('#btn')
 console.log('Starting Search...' + `${BASE_URL}` + mainSearch.value)
 
 mainSearch.addEventListener('keypress', function (e) {
@@ -15,6 +19,32 @@ mainSearch.addEventListener('keypress', function (e) {
   }
 })
 
+randomSearch.addEventListener('click', () => {
+  const inputValue = document.querySelector('#btn');
+  removeDrinks();
+  fetchRandom(inputValue.value);
+  document.querySelector('#btn').value = '';
+})
+
+// Random search
+async function fetchRandom(searchDrink) {
+  console.log(searchDrink)
+  const randomUrl = `${RANDOM_URL}`;
+  console.log(randomUrl)
+
+  try {
+    const response = await axios(randomUrl)
+    console.log(response)
+    for (let i = 0; i < response.data.drinks.length; i++) {
+      printArr(response.data.data[i])
+    }
+
+  } catch (error) {
+    console.error(error)
+  }
+}
+
+// Main search
 async function fetchDrinks(searchDrink) {
   console.log(searchDrink)
   const url = `${BASE_URL}s=${searchDrink}`
