@@ -3,7 +3,7 @@ const API_KEY = '9973533';
 const RANDOM_COCKTAIL = 'https://www.thecocktaildb.com/api/json/v2/1/randomselection.php'
 const BASE_URL = `${DOMAIN}?apikey=${API_KEY}&`
 // const RANDOM_URL = `${RANDOM_COCKTAIL}?apikey=${API_KEY}`
-const RANDOM_URL = 'https://www.themealdb.com/api/json/v2/9973533/randomselection.php'
+const RANDOM_URL = 'https://www.thecocktaildb.com/api/json/v2/9973533/randomselection.php'
 
 const cocktailList = document.querySelector('.display')
 const mainSearch = document.querySelector('#search-drink')
@@ -27,8 +27,7 @@ randomSearch.addEventListener('click', () => {
 })
 
 // Random search
-async function fetchRandom(searchDrink) {
-  console.log(searchDrink)
+async function fetchRandom() {
   const randomUrl = `${RANDOM_URL}`;
   console.log(randomUrl)
 
@@ -36,13 +35,14 @@ async function fetchRandom(searchDrink) {
     const response = await axios(randomUrl)
     console.log(response)
     for (let i = 0; i < response.data.drinks.length; i++) {
-      printArr(response.data.data[i])
+      printArr(response.data.drinks[i])
     }
 
   } catch (error) {
     console.error(error)
   }
 }
+fetchRandom();
 
 // Main search
 async function fetchDrinks(searchDrink) {

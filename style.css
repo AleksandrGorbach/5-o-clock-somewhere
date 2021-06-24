@@ -57,6 +57,11 @@ p {
   /* border:none; */
 }
 
+.display-wrapper {
+  display: flex;
+  flex-flow: row-wrap;
+}
+
 .parent:hover .child, .parent:focus .child {
   transform: scale(1.2);
 }
@@ -140,6 +145,22 @@ p {
   font-family: Poriet;
 }
 
+#cocktail-instructions{
+  display: flex;
+  flex-flow: row-reverse;
+}
+
+.display {
+  display: flex;
+  flex-flow: flex-wrap;
+  flex-wrap:wrap;
+  justify-content: center;
+  /* border: 1px solid black; */
+  max-width: 100%;
+  /* background-image: url(https://images2.alphacoders.com/848/848563.jpg); */
+  /* color: blue; */
+  /* padding: 5px; */
+}
 /* .container {
   padding: 0;
   padding-left: 0px;
@@ -167,6 +188,11 @@ p {
     display:flex;
     align-self: center;
   }
+  .display {
+    border: none;
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 @media only screen and (max-width: 1440px){
@@ -174,20 +200,13 @@ p {
     /* flex-wrap: row; */
     background-color: lightgrey;
   }
-  .img-container {
+  /* .display {
+    display: flex;
+  } */
+  /* .img-container {
     display: box;
     flex-wrap: wrap;
     box-lines: multiple;
-  }
-  .display {
-    display: grid;
-    grid-column: inherit;
-
-  }
-  /* .drink-container {
-    display: flex;
-    flex-grow: inherit;
-    text-align: center;
   } */
 }
 
@@ -202,3 +221,7 @@ Zooming Background: https://css-tricks.com/zooming-background-images/
 Styling Search Bar: https://www.mikedane.com/web-development/css/styling-search-bar/ 
 
 */
+
+/* *{
+  border: 1px solid black;
+} */
