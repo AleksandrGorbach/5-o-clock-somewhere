@@ -14,22 +14,6 @@ a {
   cursor: pointer;
 }
 
-/* main {
-  width: 100%;
-  max-width: 100%;
-  padding: 0;
-}
-
-p {
-  display: flex;
-  flex-direction: row-reverse;
-  text-align: center;
-} */
-
-/* body {
-  background-image: url(https://images2.alphacoders.com/848/848563.jpg);
-} */
-
 .parent {
   width: 100%;
   height: 300px;
@@ -54,7 +38,6 @@ p {
   transition: all .5s;
   text-align: center;
   text-decoration: none;
-  /* border:none; */
 }
 
 .display-wrapper {
@@ -91,15 +74,8 @@ p {
   min-width: 50px;
   text-align: center;
   align-items: center;
-  /* background-image: url(https://images2.alphacoders.com/848/848563.jpg); */
 }
 
-/* .search-icon {
-  position: absolute;
-  top: 6px;
-  left: 15px;
-  width: 14px;
-} */
 
 .search {
   border: 1px solid grey;
@@ -145,40 +121,31 @@ p {
   font-family: Poriet;
 }
 
-#cocktail-instructions{
-  display: flex;
-  flex-flow: row-reverse;
-}
-
 .display {
   display: flex;
   flex-flow: flex-wrap;
   flex-wrap:wrap;
   justify-content: center;
-  /* border: 1px solid black; */
   max-width: 100%;
-  /* background-image: url(https://images2.alphacoders.com/848/848563.jpg); */
-  /* color: blue; */
-  /* padding: 5px; */
 }
-/* .container {
-  padding: 0;
-  padding-left: 0px;
-  display: flex;
-  flex-wrap: wrap;
-} */
-/* 
-.drink-container {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-} */
 
-/* 
-.drink-container {
-  border: 1px #ccc solid;
-  border-radius: 50%;
-} */
+#cocktail-instructions{
+  display: flex;
+  flex-flow: row-reverse;
+}
+
+#btn {
+  width: 415px;
+  font-family: Poriet;
+  color: lightgrey
+  background: transparent;
+  border-radius: 6px;
+}
+
+#btn:hover, #btn:focus {
+  border: .5px solid #009688;
+  background-color: #ffffff;
+}
 
 @media only screen and (max-width: 425px){
   .search {
@@ -193,34 +160,14 @@ p {
     display: flex;
     flex-direction: column;
   }
+  #btn {
+    width: 100px;
+  }
 }
 
 @media only screen and (max-width: 1440px){
-  body {
-    /* flex-wrap: row; */
-    background-color: lightgrey;
+  
   }
-  /* .display {
-    display: flex;
-  } */
-  /* .img-container {
-    display: box;
-    flex-wrap: wrap;
-    box-lines: multiple;
-  } */
-}
-
-/* @font-face {
-  font-family: Poiret one;
-  src: url(https://fonts.googleapis.com/css2?family=Poiret+One&display=swap)
-} */
-
-/* Sources Used
-
-Zooming Background: https://css-tricks.com/zooming-background-images/ 
-Styling Search Bar: https://www.mikedane.com/web-development/css/styling-search-bar/ 
-
-*/
 
 /* *{
   border: 1px solid black;

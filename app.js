@@ -2,7 +2,6 @@ const DOMAIN = 'https://www.thecocktaildb.com/api/json/v1/1/search.php';
 const API_KEY = '9973533';
 const RANDOM_COCKTAIL = 'https://www.thecocktaildb.com/api/json/v2/1/randomselection.php'
 const BASE_URL = `${DOMAIN}?apikey=${API_KEY}&`
-// const RANDOM_URL = `${RANDOM_COCKTAIL}?apikey=${API_KEY}`
 const RANDOM_URL = 'https://www.thecocktaildb.com/api/json/v2/9973533/randomselection.php'
 
 const cocktailList = document.querySelector('.display')
@@ -64,7 +63,6 @@ async function fetchDrinks(searchDrink) {
 }
 
 function removeDrinks() {
-  // cocktailList.innerHTML = ''
   while (cocktailList.lastChild) {
     cocktailList.removeChild(cocktailList.lastChild)
   }
@@ -100,8 +98,5 @@ function printArr(arr) {
 
 
 
-// const RANDOM_COCKTAIL = 'www.thecocktaildb.com/api/json/v1/1/random.php'
-// random cocktail = 'www.thecocktaildb.com/api/json/v1/1/random.php'
-// multiple ingredients = 'www.thecocktaildb.com/api/json/v1/1/filter.php?i=Dry_Vermouth,Gin,Anis'
-// popular cocktails = 'www.thecocktaildb.com/api/json/v1/1/popular.php'
+
 
