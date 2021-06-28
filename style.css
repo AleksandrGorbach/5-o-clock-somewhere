@@ -35,8 +35,6 @@ body {
 .parent {
   width: 100%;
   height: 300px;
-  margin: 20px;
-  border: 1px solid lightcyan;
   overflow: hidden;
   position: relative;
   display: inline-block;
@@ -56,6 +54,7 @@ body {
   transition: all .5s;
   text-align: center;
   text-decoration: none;
+  margin: 0 auto;
 }
 
 .display-wrapper {
@@ -171,7 +170,7 @@ body {
   background-color: #ffffff;
 }
 
-@media only screen and (max-width: 425px){
+@media only screen and (max-width: 634px){
 
   .search {
     width: 100px;
@@ -179,14 +178,49 @@ body {
   .child {
     display:flex;
     align-self: center;
+    width: 350px;
+    border: none;
   }
   .display {
     border: none;
     display: flex;
     flex-direction: column;
   }
+  .drink-container {
+    display: flex;
+    position: inherit;
+    flex-direction: column;
+    border: solid 1px black;
+  }
+
   #btn {
     width: 165px;
   }
 }
 
+@media only screen and (max-width: 375px){
+  .child {
+    display: flex;
+    align-self: center;
+    width: 320px;
+    border: none;
+  }
+  .cocktail-instructions {
+    display: block;
+    width: 100px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+}
+
+@media only screen and (max-width: 635px;){
+
+  .cocktail-instructions {
+    display: block;
+    width: 100px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+}
