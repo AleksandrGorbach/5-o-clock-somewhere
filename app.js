@@ -9,6 +9,7 @@ const mainSearch = document.querySelector('#search-drink')
 const randomSearch = document.querySelector('#btn')
 console.log('Starting Search...' + `${BASE_URL}` + mainSearch.value)
 
+// Event Listener For The Search Bar
 mainSearch.addEventListener('keypress', function (e) {
   const inputValue = document.querySelector('#search-drink')
   if (e.key === 'Enter') {
@@ -18,6 +19,7 @@ mainSearch.addEventListener('keypress', function (e) {
   }
 })
 
+// Event Listener For The Random Button 
 randomSearch.addEventListener('click', () => {
   const inputValue = document.querySelector('#btn');
   removeDrinks();
@@ -25,7 +27,7 @@ randomSearch.addEventListener('click', () => {
   document.querySelector('#btn').value = '';
 })
 
-// Random search
+// Random Results
 async function fetchRandom() {
   const randomUrl = `${RANDOM_URL}`;
   console.log(randomUrl)
@@ -43,7 +45,7 @@ async function fetchRandom() {
 }
 fetchRandom();
 
-// Main search
+// Main Search
 async function fetchDrinks(searchDrink) {
   console.log(searchDrink)
   const url = `${BASE_URL}s=${searchDrink}`
@@ -56,7 +58,7 @@ async function fetchDrinks(searchDrink) {
       printArr(response.data.drinks[i])
     }
 
-    //return response
+    // Return Response
   } catch (error) {
     console.error(error)
   }
@@ -69,8 +71,6 @@ function removeDrinks() {
 }
 
 function printArr(arr) {
-  console.log('Printing result: ' + arr.strDrink)
-
   const drinkContainer = document.createElement('div')
   drinkContainer.setAttribute('class', 'drink-container')
 

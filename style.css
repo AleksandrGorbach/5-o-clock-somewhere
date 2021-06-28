@@ -14,11 +14,11 @@ a {
   cursor: pointer;
 }
 
-  body {
+body {
     background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
     background-size: 400% 400%;
     animation: gradient 15s ease infinite;
-  }
+}
   
   @keyframes gradient {
     0% {
@@ -110,10 +110,6 @@ a {
   background-color: #fff;
   border: 1px solid #000;
   box-shadow: none;
-  -webkit-appearance: none;
-  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-  background-size: 400% 400%;
-  animation: gradient 15s ease infinite;
 }
 
 .search:hover, .search:focus {
@@ -148,10 +144,19 @@ a {
   justify-content: center;
   max-width: 100%;
 }
+.drink-container {
+  display: flex;
+  padding: 50px;
+  border: solid 1px black;
+  flex-flow: column-wrap;
+  max-width: 500px;
+  max-height: 400px;
+}
 
 #cocktail-instructions{
   display: flex;
   flex-flow: row-reverse;
+  border: solid 1px black;
 }
 
 #btn {
@@ -159,9 +164,6 @@ a {
   font-family: Poriet;
   color: lightslategrey;
   border-radius: 5px;
-  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-  background-size: 400% 400%;
-  animation: gradient 15s ease infinite;
 }
 
 #btn:hover, #btn:focus {
@@ -170,6 +172,7 @@ a {
 }
 
 @media only screen and (max-width: 425px){
+
   .search {
     width: 100px;
   }
@@ -187,10 +190,3 @@ a {
   }
 }
 
-@media only screen and (max-width: 1440px){
-  
-  }
-
-/* *{
-  border: 1px solid black;
-} */
