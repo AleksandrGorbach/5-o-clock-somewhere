@@ -80,8 +80,8 @@ MVP:
 - Add media query 
 
 PMVP:
-- Allow users to save their favorite cocktails.
-- Add additional options: 'dealers choice' which provides the user with a random cocktail.
+- Add additional options: 'dealers choice' which provides the user with a random cocktail. ✅
+- Add animations to the drink images. ✅
 - Create a small mixer animation when fetching data.
 - Have the background image transition through a few photos of cocktails like a mini slideshow.
 
@@ -90,10 +90,10 @@ PMVP:
 |  Day | Deliverable | Status
 |---|---| ---|
 |June 21| Prompt / Wireframes / Priority Matrix / Timeframes | Complete
-|June 22| Project Approval / Core Application Structure (HTML, CSS, etc.) | Incomplete
-|June 23| Pseudocode / actual code | Incomplete
-|June 24| MVP  | Incomplete
-|June 25| PVMP & Additional Touchups | Incomplete
+|June 22| Project Approval / Core Application Structure (HTML, CSS, etc.) | Complete
+|June 23| Pseudocode / actual code | Complete
+|June 24| MVP  | Complete
+|June 25| PVMP & Additional Touchups | Complete
 |June 28| Presentations | Incomplete
 
 ## Priority Matrix
@@ -104,31 +104,42 @@ PMVP:
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
 | HTML/CSS Skeleton | H | 2hrs | 3.5hrs | 3.5hrs |
-| Initial JS with API Skeleton | H | 1hrs |
-| Making sure it is viable on mobile devices | H | 3hrs |
-| Adding a media query | H | 3hrs |
-| Setting up search functionality for user | H | 2hrs |
-| Displaying the text and images from the API | H | 3hrs | 
-| Additional styling with flexbox | H | 3hrs |
-| Formatting results into gallery | H | 2hrs |
-| Working on local storage for "favorites options" | M | 3hrs | 
+| Initial JS with API Skeleton | H | 1hrs | 3hrs | 3hrs |
+| Making sure it is viable on mobile devices | H | 3hrs | 2hrs | 2hrs |
+| Adding a media query | H | 3hrs | 2hrs | 2hrs |
+| Setting up search functionality for user | H | 2hrs | 2hrs | 2hrs |
+| Displaying the text and images from the API | H | 3hrs | 6hrs | 6hrs |
+| Additional styling with flexbox | H | 3hrs | 5hrs | 5hrs |
+| Formatting results into gallery | H | 2hrs | 3hrs | 3hrs |
 | Working with API | H | 3hrs | 2.5hrs | 2.5hrs |
-| Debugging & troubleshooting | H | 3hrs |
-| Getting user feedback | M | 2hrs |
-| Hosting the projet | M | 1hr | 
-| Testing functionality | H | 2hrs |
-| Mock Presentation(s) | M | 1hr |
-| Total | H | 34hrs| hrs | 5hrs |
+| Debugging & troubleshooting | H | 3hrs | 4hrs | 4hrs |
+| Getting user feedback | M | 2hrs | 3hrs | 3hrs |
+| Testing functionality | H | 2hrs | 3hrs | 3hrs |
+| Mock Presentation(s) | M | 1hr | 1.5 hrs | 1.5 hrs |
+| Total | H | 34hrs| hrs | 5hrs | 40.5 | 40.5 | 
 
 ## Code Snippet
-
-Use this section to include a brief code snippet of functionality that you are proud of and a brief description.  
-
 ```
-function reverse(string) {
-	// here is the code to reverse a string of text
+body {
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
 }
-```
+  
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+```  
+Creates a gradient animation for the background with the specified colors shifting.
+
 
 ## Change Log
- Use this section to document what changes were made and the reasoning behind those changes.  
+I cut out a lot of PMVP ideas because I couldn't figure out how to implemenet them in a way that they didn't appear forced. The layout also changed about 3-4 times. 
